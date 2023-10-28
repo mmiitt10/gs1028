@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>メモ帳</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>テスト</h1>
-    後から追加したやつ<br>
-    あああああ
+    <section>
+        <h1>メモ帳</h1>
+        <form id="memoForm">
+            <label for="title">タイトル:</label>
+            <input type="text" id="title" required>
+            <br>
+            <label for="details">詳細:</label>
+            <textarea id="details" required></textarea>
+            <br>
+            <input type="submit" value="追加">
+        </form>
+        <ul id="memoList"></ul>
+    </section>
+    <script src="scripts.js"></script>
 </body>
 </html>
